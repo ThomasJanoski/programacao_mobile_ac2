@@ -217,6 +217,8 @@ public class MainActivity extends AppCompatActivity {
         boolean filterCinema = cbFilterCinema.isChecked();
         String sortBy = spSort.getSelectedItem().toString();
 
+        loadMovies();
+
         List<Movie> filteredMovies = new ArrayList<>();
         for (Movie movie : moviesList) {
             boolean matchesGenre = filterGenre.equals("Todos os gêneros") || movie.getGenre().equals(filterGenre);
