@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movie_genres">
+        <item>Ação</item>
+        <item>Drama</item>
+        <item>Comédia</item>
+        <item>Sci-Fi</item>
+        <item>Horror</item>
+        <item>Outro</item>
+    </string-array>
+    <string-array name="sort_options">
+        <item>Nenhum</item>
+        <item>Nota - Desc</item>
+        <item>Ano - Asc</item>
+    </string-array>
+</resources>

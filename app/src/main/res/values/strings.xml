@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Catálogo de Filme</string>
+    <string name="title">Título</string>
+    <string name="director">Diretor</string>
+    <string name="year">Ano</string>
+    <string name="rating">Nota Pessoal</string>
+    <string name="genre">Gênero</string>
+    <string name="seen_in_cinema">Viu no Cinema?</string>
+    <string name="save">Salvar</string>
+    <string name="filter_genre">Filtrar por gênero</string>
+    <string name="all_genres">Todos os gêneros</string>
+    <string name="filter_cinema">Mostrar Apenas Vistos no Cinema</string>
+    <string name="sort_by">Organizar por</string>
+    <string name="sort_rating">Nota - Desc</string>
+    <string name="sort_year">Ano - Asc</string>
+    <string name="cancel">Cancelar</string>
+</resources>
