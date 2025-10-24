@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
+import java.util.Locale;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
     private static final String TAG = "MovieAdapter";
@@ -45,7 +46,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     public void onBindViewHolder(ViewHolder holder, int pos) {
         Movie movie = movies.get(pos);
         holder.txt1.setText(movie.getTitle());
-        holder.txt2.setText("Year: " + movie.getYear() + " | Rating: " + movie.getRating() + "/5 | Genre: " + movie.getGenre());
+        String descricao = String.format(Locale.getDefault(), "Diretor: %s \nAno: %d | Nota: %d/5 | Gênero: %s",
+                movie.getDirector(), movie.getYear(), movie.getRating(), movie.getGenre());
+        holder.txt2.setText(descricao);
 
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {
